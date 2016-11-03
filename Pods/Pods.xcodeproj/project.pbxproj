@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DD7ABE1CF76548F0FD5C2096A71EE85 /* SwiftTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 49C22F45F716E88D2A6A0528B6290213 /* SwiftTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37784876D8488AE782D0057CF109F6BA /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735815ACB71F3F73526684220C1AE09C /* LocationHandler.swift */; };
+		4784E5D6DAB1F52A661CB5466CBBD14D /* Pods-iMessagePack-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B07A6EE3B59693A25C3427655B9E4680 /* Pods-iMessagePack-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C431E35B4C0032068E60F89F95DA611 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 8F4CA6A69DFB1A805B6F414B51974A60 /* Info.plist */; };
+		4F46F1AD682E31AA02488061F5B69665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5BC36A2BB449AD10444D6B9A4E68E962 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		66B6569B54A0C2142979951722C11194 /* Pods-iMessagePack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9AB6CE22DC84730DFE54EBD54A658CA /* Pods-iMessagePack-dummy.m */; };
+		66DE9CEFDC5272E29927DB1BC4F45FC5 /* CoreData-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A505327919D8E824E6CB7D5C6140E8CB /* CoreData-Extensions.swift */; };
+		725C337D1E511715345300DF204290C7 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4703B5134927A33D6AAD9D69474B348A /* Section.swift */; };
+		77EBE81AD77792ED471DDD402EB7A775 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25F64DFB6B95FA2BE0FFDF44AED1AD4 /* Extensions.swift */; };
+		78094A5D9C68B34DC870E3780389AA3F /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C5E5A781B8F0695D0F34F84CEC98D /* Structs.swift */; };
+		78C5E394AB6F776AE10AF9EF616E5E9B /* Pods-iMessagePackTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E5B1FEF3545C7ED11D9F444C13EBCB5 /* Pods-iMessagePackTests-dummy.m */; };
+		8B3F6FF188B3CF0A6A2856B8EEBA8ABB /* SwiftTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C08F8A7590721522F74088FFEE5B143 /* SwiftTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE9CD18044337C4B0606B5853C464DEE /* CloudKit-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C68DFB39D3B63A08DA0D922771B6C8 /* CloudKit-Extensions.swift */; };
+		D4BC3545447AF3B6B8F161839BE962B6 /* Process.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2706B4DFD05F48C788DF556F4A79FE15 /* Process.swift */; };
+		D5729439358DEB0E7F3A9B8053FCD7D5 /* SwiftTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60427C36637EA09F2B40A6473991A23D /* SwiftTools-dummy.m */; };
+		E6B079536AD59B9F2E7D9AEA4B338EF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		EB10A2093CCF6C6BEDFF55E33BB8072D /* Pods-iMessagePackTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE2CCBB3A283275DE70E2BFBE6918FBD /* Pods-iMessagePackTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F739F953908BEAE6EF68BAD25DF8D35F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0005528CED57CEFB6EFFFAB2EC103ED1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4735E82ED82487DC7A324FAD5E2938D3;
+			remoteInfo = SwiftTools;
+		};
+		BB8711CA55308089AADB44194AA6B042 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4735E82ED82487DC7A324FAD5E2938D3;
+			remoteInfo = SwiftTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01411CBF023C6CFDF64BAF3C93D28FF8 /* SwiftTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftTools.modulemap; sourceTree = "<group>"; };
+		08850034FF1D04FC5DCF199AEA234A70 /* Pods-iMessagePackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessagePackTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C3259073823F7AE4C278DB4EAF7C3AB /* Pods-iMessagePack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMessagePack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		14DC8A54ED6777E73B512C4983873379 /* Pods-iMessagePack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMessagePack-resources.sh"; sourceTree = "<group>"; };
+		20920736AD138CB7436F59CABF96050C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2706B4DFD05F48C788DF556F4A79FE15 /* Process.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Process.swift; path = SwiftTools/Process.swift; sourceTree = "<group>"; };
+		27A8961AC56A512DBE370308967C44CE /* Pods-iMessagePack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMessagePack-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A9148813D06BEBE2086F05A20E07C05 /* SwiftTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTools.xcconfig; sourceTree = "<group>"; };
+		2C08F8A7590721522F74088FFEE5B143 /* SwiftTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-umbrella.h"; sourceTree = "<group>"; };
+		33AA5089C423C7AE8F043D28BAE2EFBB /* Pods-iMessagePackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessagePackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37DD06405CD6DFD0A6944D1B92C13694 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3831B86FE0FF60DE31867D474112A6FF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4703B5134927A33D6AAD9D69474B348A /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = SwiftTools/Section.swift; sourceTree = "<group>"; };
+		48060CC14CE9CB7468915A2489D6DDC3 /* Pods-iMessagePackTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iMessagePackTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49C22F45F716E88D2A6A0528B6290213 /* SwiftTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftTools.h; path = SwiftTools/SwiftTools.h; sourceTree = "<group>"; };
+		5FAF80A45C4EFB63DD62AF1769CEA782 /* Pods-iMessagePackTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iMessagePackTests.modulemap"; sourceTree = "<group>"; };
+		60427C36637EA09F2B40A6473991A23D /* SwiftTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTools-dummy.m"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		683F1CF1CB7CECEB9065FEE4312E31A4 /* Pods-iMessagePackTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iMessagePackTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		70E9B807E4856B4AEA5F0DA7887A8EA3 /* Pods-iMessagePackTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMessagePackTests-resources.sh"; sourceTree = "<group>"; };
+		735815ACB71F3F73526684220C1AE09C /* LocationHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationHandler.swift; path = SwiftTools/LocationHandler.swift; sourceTree = "<group>"; };
+		77A7D5217B6158541EC7D51D06F84281 /* Pods-iMessagePack.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-iMessagePack.modulemap"; sourceTree = "<group>"; };
+		7CE1BD04284452815420BDDDB2B5549C /* SwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftTools.framework; path = SwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5B1FEF3545C7ED11D9F444C13EBCB5 /* Pods-iMessagePackTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMessagePackTests-dummy.m"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		88AD85F5F9F75A5BD1C6BEB9F3994D9F /* Pods_iMessagePack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iMessagePack.framework; path = "Pods-iMessagePack.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4CA6A69DFB1A805B6F414B51974A60 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftTools/Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		988C5E5A781B8F0695D0F34F84CEC98D /* Structs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Structs.swift; path = SwiftTools/Structs.swift; sourceTree = "<group>"; };
+		98E627390AEFFDE52A65D4CF16594051 /* Pods-iMessagePack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessagePack.debug.xcconfig"; sourceTree = "<group>"; };
+		A10A12FD6F2CF00E3A92DEC89E7E2CD7 /* Pods-iMessagePackTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iMessagePackTests-frameworks.sh"; sourceTree = "<group>"; };
+		A505327919D8E824E6CB7D5C6140E8CB /* CoreData-Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreData-Extensions.swift"; path = "SwiftTools/Extensions/CoreData-Extensions.swift"; sourceTree = "<group>"; };
+		AE2CCBB3A283275DE70E2BFBE6918FBD /* Pods-iMessagePackTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMessagePackTests-umbrella.h"; sourceTree = "<group>"; };
+		B07A6EE3B59693A25C3427655B9E4680 /* Pods-iMessagePack-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iMessagePack-umbrella.h"; sourceTree = "<group>"; };
+		C028CE256A5BD0FBD9350704B924D799 /* Pods-iMessagePack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iMessagePack.release.xcconfig"; sourceTree = "<group>"; };
+		C098286425B396476F078A3DC5A4B81D /* Pods_iMessagePackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iMessagePackTests.framework; path = "Pods-iMessagePackTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25F64DFB6B95FA2BE0FFDF44AED1AD4 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = SwiftTools/Extensions/Extensions.swift; sourceTree = "<group>"; };
+		C9AB6CE22DC84730DFE54EBD54A658CA /* Pods-iMessagePack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iMessagePack-dummy.m"; sourceTree = "<group>"; };
+		F1C68DFB39D3B63A08DA0D922771B6C8 /* CloudKit-Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CloudKit-Extensions.swift"; path = "SwiftTools/Extensions/CloudKit-Extensions.swift"; sourceTree = "<group>"; };
+		FA1AD5EA5C5F68829EB1B637CFF2434E /* SwiftTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55833D3643EEAB62F0D769F4CABB4994 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F46F1AD682E31AA02488061F5B69665 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72EBCD92FEC9AFDDCC75BF5882E983A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F739F953908BEAE6EF68BAD25DF8D35F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		799480B1243D96B9B2208E5730CA5AD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B079536AD59B9F2E7D9AEA4B338EF1 /* Foundation.framework in Frameworks */,
+				5BC36A2BB449AD10444D6B9A4E68E962 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013995B32516A7F3E26D703C1A29C048 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20920736AD138CB7436F59CABF96050C /* Info.plist */,
+				01411CBF023C6CFDF64BAF3C93D28FF8 /* SwiftTools.modulemap */,
+				2A9148813D06BEBE2086F05A20E07C05 /* SwiftTools.xcconfig */,
+				60427C36637EA09F2B40A6473991A23D /* SwiftTools-dummy.m */,
+				FA1AD5EA5C5F68829EB1B637CFF2434E /* SwiftTools-prefix.pch */,
+				2C08F8A7590721522F74088FFEE5B143 /* SwiftTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftTools";
+			sourceTree = "<group>";
+		};
+		0AA9B12D2643E759A9200BFDD41B6F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88AD85F5F9F75A5BD1C6BEB9F3994D9F /* Pods_iMessagePack.framework */,
+				C098286425B396476F078A3DC5A4B81D /* Pods_iMessagePackTests.framework */,
+				7CE1BD04284452815420BDDDB2B5549C /* SwiftTools.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		313EF75CE006AD3C0F3A6342DFB09E2F /* SwiftTools */ = {
+			isa = PBXGroup;
+			children = (
+				F1C68DFB39D3B63A08DA0D922771B6C8 /* CloudKit-Extensions.swift */,
+				A505327919D8E824E6CB7D5C6140E8CB /* CoreData-Extensions.swift */,
+				C25F64DFB6B95FA2BE0FFDF44AED1AD4 /* Extensions.swift */,
+				8F4CA6A69DFB1A805B6F414B51974A60 /* Info.plist */,
+				735815ACB71F3F73526684220C1AE09C /* LocationHandler.swift */,
+				2706B4DFD05F48C788DF556F4A79FE15 /* Process.swift */,
+				4703B5134927A33D6AAD9D69474B348A /* Section.swift */,
+				988C5E5A781B8F0695D0F34F84CEC98D /* Structs.swift */,
+				49C22F45F716E88D2A6A0528B6290213 /* SwiftTools.h */,
+				013995B32516A7F3E26D703C1A29C048 /* Support Files */,
+			);
+			name = SwiftTools;
+			path = SwiftTools;
+			sourceTree = "<group>";
+		};
+		360AD2D169B8760BAD5EAA1717A58DC7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E0671DFB048F4A024270CFB93A70968 /* Pods-iMessagePack */,
+				4AC498454E1AF8C0104F0E69308534BB /* Pods-iMessagePackTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AC498454E1AF8C0104F0E69308534BB /* Pods-iMessagePackTests */ = {
+			isa = PBXGroup;
+			children = (
+				3831B86FE0FF60DE31867D474112A6FF /* Info.plist */,
+				5FAF80A45C4EFB63DD62AF1769CEA782 /* Pods-iMessagePackTests.modulemap */,
+				48060CC14CE9CB7468915A2489D6DDC3 /* Pods-iMessagePackTests-acknowledgements.markdown */,
+				683F1CF1CB7CECEB9065FEE4312E31A4 /* Pods-iMessagePackTests-acknowledgements.plist */,
+				7E5B1FEF3545C7ED11D9F444C13EBCB5 /* Pods-iMessagePackTests-dummy.m */,
+				A10A12FD6F2CF00E3A92DEC89E7E2CD7 /* Pods-iMessagePackTests-frameworks.sh */,
+				70E9B807E4856B4AEA5F0DA7887A8EA3 /* Pods-iMessagePackTests-resources.sh */,
+				AE2CCBB3A283275DE70E2BFBE6918FBD /* Pods-iMessagePackTests-umbrella.h */,
+				33AA5089C423C7AE8F043D28BAE2EFBB /* Pods-iMessagePackTests.debug.xcconfig */,
+				08850034FF1D04FC5DCF199AEA234A70 /* Pods-iMessagePackTests.release.xcconfig */,
+			);
+			name = "Pods-iMessagePackTests";
+			path = "Target Support Files/Pods-iMessagePackTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A2A6E1DB817F5DB2AC8BF7F350D52E87 /* Pods */,
+				0AA9B12D2643E759A9200BFDD41B6F5C /* Products */,
+				360AD2D169B8760BAD5EAA1717A58DC7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9E0671DFB048F4A024270CFB93A70968 /* Pods-iMessagePack */ = {
+			isa = PBXGroup;
+			children = (
+				37DD06405CD6DFD0A6944D1B92C13694 /* Info.plist */,
+				77A7D5217B6158541EC7D51D06F84281 /* Pods-iMessagePack.modulemap */,
+				0C3259073823F7AE4C278DB4EAF7C3AB /* Pods-iMessagePack-acknowledgements.markdown */,
+				27A8961AC56A512DBE370308967C44CE /* Pods-iMessagePack-acknowledgements.plist */,
+				C9AB6CE22DC84730DFE54EBD54A658CA /* Pods-iMessagePack-dummy.m */,
+				14DC8A54ED6777E73B512C4983873379 /* Pods-iMessagePack-resources.sh */,
+				B07A6EE3B59693A25C3427655B9E4680 /* Pods-iMessagePack-umbrella.h */,
+				98E627390AEFFDE52A65D4CF16594051 /* Pods-iMessagePack.debug.xcconfig */,
+				C028CE256A5BD0FBD9350704B924D799 /* Pods-iMessagePack.release.xcconfig */,
+			);
+			name = "Pods-iMessagePack";
+			path = "Target Support Files/Pods-iMessagePack";
+			sourceTree = "<group>";
+		};
+		A2A6E1DB817F5DB2AC8BF7F350D52E87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				313EF75CE006AD3C0F3A6342DFB09E2F /* SwiftTools */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34428F6CA194B980FE93A3F9F4AAB63E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3F6FF188B3CF0A6A2856B8EEBA8ABB /* SwiftTools-umbrella.h in Headers */,
+				0DD7ABE1CF76548F0FD5C2096A71EE85 /* SwiftTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3A344FD6E65D09CE895C61D3FF40A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4784E5D6DAB1F52A661CB5466CBBD14D /* Pods-iMessagePack-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34620F39C3F6AC13B599B4E882523D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB10A2093CCF6C6BEDFF55E33BB8072D /* Pods-iMessagePackTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4735E82ED82487DC7A324FAD5E2938D3 /* SwiftTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92C0C7B1DA4C6B2F7432054A94E7F77B /* Build configuration list for PBXNativeTarget "SwiftTools" */;
+			buildPhases = (
+				3C55728782C13B50D2AFDADA5999C311 /* Sources */,
+				799480B1243D96B9B2208E5730CA5AD4 /* Frameworks */,
+				34428F6CA194B980FE93A3F9F4AAB63E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTools;
+			productName = SwiftTools;
+			productReference = 7CE1BD04284452815420BDDDB2B5549C /* SwiftTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52CB34BA9EDCC86BB0A5CE792C592143 /* Pods-iMessagePackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12ECB40771A9CFD1BC6198B92240B85 /* Build configuration list for PBXNativeTarget "Pods-iMessagePackTests" */;
+			buildPhases = (
+				E34D5092B539F05BBC6FC34DE357BFEA /* Sources */,
+				72EBCD92FEC9AFDDCC75BF5882E983A2 /* Frameworks */,
+				A34620F39C3F6AC13B599B4E882523D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6EE9F6F51687C20D25415B22C6B68D /* PBXTargetDependency */,
+			);
+			name = "Pods-iMessagePackTests";
+			productName = "Pods-iMessagePackTests";
+			productReference = C098286425B396476F078A3DC5A4B81D /* Pods_iMessagePackTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FF56EE0D556F154E87C2194920FB59C /* Pods-iMessagePack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1EB7D7D4EBF39FFBBD3B25D9F5B7E7 /* Build configuration list for PBXNativeTarget "Pods-iMessagePack" */;
+			buildPhases = (
+				D644D4F8F52051665F7A0E063815FA56 /* Sources */,
+				55833D3643EEAB62F0D769F4CABB4994 /* Frameworks */,
+				4D3A344FD6E65D09CE895C61D3FF40A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E08C871BC5AA7545EE702AF8680BC57 /* PBXTargetDependency */,
+			);
+			name = "Pods-iMessagePack";
+			productName = "Pods-iMessagePack";
+			productReference = 88AD85F5F9F75A5BD1C6BEB9F3994D9F /* Pods_iMessagePack.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0AA9B12D2643E759A9200BFDD41B6F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FF56EE0D556F154E87C2194920FB59C /* Pods-iMessagePack */,
+				52CB34BA9EDCC86BB0A5CE792C592143 /* Pods-iMessagePackTests */,
+				4735E82ED82487DC7A324FAD5E2938D3 /* SwiftTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C55728782C13B50D2AFDADA5999C311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9CD18044337C4B0606B5853C464DEE /* CloudKit-Extensions.swift in Sources */,
+				66DE9CEFDC5272E29927DB1BC4F45FC5 /* CoreData-Extensions.swift in Sources */,
+				77EBE81AD77792ED471DDD402EB7A775 /* Extensions.swift in Sources */,
+				4C431E35B4C0032068E60F89F95DA611 /* Info.plist in Sources */,
+				37784876D8488AE782D0057CF109F6BA /* LocationHandler.swift in Sources */,
+				D4BC3545447AF3B6B8F161839BE962B6 /* Process.swift in Sources */,
+				725C337D1E511715345300DF204290C7 /* Section.swift in Sources */,
+				78094A5D9C68B34DC870E3780389AA3F /* Structs.swift in Sources */,
+				D5729439358DEB0E7F3A9B8053FCD7D5 /* SwiftTools-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D644D4F8F52051665F7A0E063815FA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B6569B54A0C2142979951722C11194 /* Pods-iMessagePack-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34D5092B539F05BBC6FC34DE357BFEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C5E394AB6F776AE10AF9EF616E5E9B /* Pods-iMessagePackTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E08C871BC5AA7545EE702AF8680BC57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftTools;
+			target = 4735E82ED82487DC7A324FAD5E2938D3 /* SwiftTools */;
+			targetProxy = 0005528CED57CEFB6EFFFAB2EC103ED1 /* PBXContainerItemProxy */;
+		};
+		DF6EE9F6F51687C20D25415B22C6B68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftTools;
+			target = 4735E82ED82487DC7A324FAD5E2938D3 /* SwiftTools */;
+			targetProxy = BB8711CA55308089AADB44194AA6B042 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C79FF53D7FBA65B45A67085F228B310 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9148813D06BEBE2086F05A20E07C05 /* SwiftTools.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTools/SwiftTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftTools/SwiftTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		422FF6705940A4C56B9436E3DEC6366A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08850034FF1D04FC5DCF199AEA234A70 /* Pods-iMessagePackTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessagePackTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMessagePackTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A057E80F8E40689FD3F31161F147B99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9148813D06BEBE2086F05A20E07C05 /* SwiftTools.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTools/SwiftTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftTools/SwiftTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96EBCDCF04A974F59F94149BC43FF980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98E627390AEFFDE52A65D4CF16594051 /* Pods-iMessagePack.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessagePack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessagePack/Pods-iMessagePack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMessagePack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A225F099EAD531EECC42AC72B8E7896F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33AA5089C423C7AE8F043D28BAE2EFBB /* Pods-iMessagePackTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessagePackTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMessagePackTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8BB22A621BFB57A47BC9D4E038A29A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C028CE256A5BD0FBD9350704B924D799 /* Pods-iMessagePack.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iMessagePack/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iMessagePack/Pods-iMessagePack.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iMessagePack;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1EB7D7D4EBF39FFBBD3B25D9F5B7E7 /* Build configuration list for PBXNativeTarget "Pods-iMessagePack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96EBCDCF04A974F59F94149BC43FF980 /* Debug */,
+				D8BB22A621BFB57A47BC9D4E038A29A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92C0C7B1DA4C6B2F7432054A94E7F77B /* Build configuration list for PBXNativeTarget "SwiftTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C79FF53D7FBA65B45A67085F228B310 /* Debug */,
+				7A057E80F8E40689FD3F31161F147B99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12ECB40771A9CFD1BC6198B92240B85 /* Build configuration list for PBXNativeTarget "Pods-iMessagePackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A225F099EAD531EECC42AC72B8E7896F /* Debug */,
+				422FF6705940A4C56B9436E3DEC6366A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,21 @@
+PODS:
+  - SwiftTools (1.1.9)
+
+DEPENDENCIES:
+  - SwiftTools (from `https://github.com/jwitcig/SwiftTools`)
+
+EXTERNAL SOURCES:
+  SwiftTools:
+    :git: https://github.com/jwitcig/SwiftTools
+
+CHECKOUT OPTIONS:
+  SwiftTools:
+    :commit: 2c349b675dde1ace1b0ac53109ab6392385e7f07
+    :git: https://github.com/jwitcig/SwiftTools
+
+SPEC CHECKSUMS:
+  SwiftTools: d68bd1d6483450503f2f43c3a7d3c2f1c18375eb
+
+PODFILE CHECKSUM: e4340ac60629ff4b179aaeffdafebc22f1373472
+
+COCOAPODS: 1.1.1

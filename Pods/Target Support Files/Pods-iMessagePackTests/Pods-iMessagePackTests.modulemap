@@ -1,0 +1,6 @@
+framework module Pods_iMessagePackTests {
+  umbrella header "Pods-iMessagePackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

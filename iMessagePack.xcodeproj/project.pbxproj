@@ -10,6 +10,10 @@
 		8B2665E01DC9A717004B953C /* iMessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2665D61DC9A717004B953C /* iMessagePack.framework */; };
 		8B2665E51DC9A717004B953C /* iMessagePackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2665E41DC9A717004B953C /* iMessagePackTests.swift */; };
 		8B2665E71DC9A717004B953C /* iMessagePack.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2665D91DC9A717004B953C /* iMessagePack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B2665F31DC9AC7B004B953C /* iMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2665F21DC9AC7B004B953C /* iMessage.swift */; };
+		8B2665F51DC9AD4C004B953C /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2665F41DC9AD4C004B953C /* Interpreter.swift */; };
+		92A4559C5531AE848257F058 /* Pods_iMessagePackTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28CDCFBD7113CB4A5DFC739C /* Pods_iMessagePackTests.framework */; };
+		B31CA97C82DAD4F3F3ED6F33 /* Pods_iMessagePack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E357DBD66115ED80EFB513 /* Pods_iMessagePack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28CDCFBD7113CB4A5DFC739C /* Pods_iMessagePackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessagePackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		674970747E82642CC7FED33A /* Pods-iMessagePack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessagePack.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessagePack/Pods-iMessagePack.release.xcconfig"; sourceTree = "<group>"; };
+		8441B6E61E93697ADABAF9E6 /* Pods-iMessagePackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessagePackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8B2665D61DC9A717004B953C /* iMessagePack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iMessagePack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2665D91DC9A717004B953C /* iMessagePack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iMessagePack.h; sourceTree = "<group>"; };
 		8B2665DA1DC9A717004B953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B2665DF1DC9A717004B953C /* iMessagePackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMessagePackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B2665E41DC9A717004B953C /* iMessagePackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessagePackTests.swift; sourceTree = "<group>"; };
 		8B2665E61DC9A717004B953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B2665F21DC9AC7B004B953C /* iMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iMessage.swift; sourceTree = "<group>"; };
+		8B2665F41DC9AD4C004B953C /* Interpreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		9ECB18D37F897CBA7DF332B7 /* Pods-iMessagePack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessagePack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iMessagePack/Pods-iMessagePack.debug.xcconfig"; sourceTree = "<group>"; };
+		B8E357DBD66115ED80EFB513 /* Pods_iMessagePack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMessagePack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F304FB8755844C638E4CC884 /* Pods-iMessagePackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMessagePackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31CA97C82DAD4F3F3ED6F33 /* Pods_iMessagePack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +57,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2665E01DC9A717004B953C /* iMessagePack.framework in Frameworks */,
+				92A4559C5531AE848257F058 /* Pods_iMessagePackTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FF926B39BE79C2C63F3B981 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ECB18D37F897CBA7DF332B7 /* Pods-iMessagePack.debug.xcconfig */,
+				674970747E82642CC7FED33A /* Pods-iMessagePack.release.xcconfig */,
+				8441B6E61E93697ADABAF9E6 /* Pods-iMessagePackTests.debug.xcconfig */,
+				F304FB8755844C638E4CC884 /* Pods-iMessagePackTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83762ED2FA2020AD5F0A6BAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8E357DBD66115ED80EFB513 /* Pods_iMessagePack.framework */,
+				28CDCFBD7113CB4A5DFC739C /* Pods_iMessagePackTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8B2665CC1DC9A717004B953C = {
 			isa = PBXGroup;
 			children = (
 				8B2665D81DC9A717004B953C /* iMessagePack */,
 				8B2665E31DC9A717004B953C /* iMessagePackTests */,
 				8B2665D71DC9A717004B953C /* Products */,
+				0FF926B39BE79C2C63F3B981 /* Pods */,
+				83762ED2FA2020AD5F0A6BAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				8B2665D91DC9A717004B953C /* iMessagePack.h */,
+				8B2665F21DC9AC7B004B953C /* iMessage.swift */,
+				8B2665F41DC9AD4C004B953C /* Interpreter.swift */,
 				8B2665DA1DC9A717004B953C /* Info.plist */,
 			);
 			path = iMessagePack;
@@ -104,10 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B2665EA1DC9A717004B953C /* Build configuration list for PBXNativeTarget "iMessagePack" */;
 			buildPhases = (
+				82AA9B4B0BE4F147F680B9D9 /* [CP] Check Pods Manifest.lock */,
 				8B2665D11DC9A717004B953C /* Sources */,
 				8B2665D21DC9A717004B953C /* Frameworks */,
 				8B2665D31DC9A717004B953C /* Headers */,
 				8B2665D41DC9A717004B953C /* Resources */,
+				7E38C0ECB899E4F184F4B134 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B2665ED1DC9A717004B953C /* Build configuration list for PBXNativeTarget "iMessagePackTests" */;
 			buildPhases = (
+				0656190EB8CE84A1A5ECFC7E /* [CP] Check Pods Manifest.lock */,
 				8B2665DB1DC9A717004B953C /* Sources */,
 				8B2665DC1DC9A717004B953C /* Frameworks */,
 				8B2665DD1DC9A717004B953C /* Resources */,
+				1711C5467608E0D4C765916B /* [CP] Embed Pods Frameworks */,
+				E981C1089F585F36459FEE07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +192,7 @@
 					8B2665D51DC9A717004B953C = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 349WFX4WJR;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8B2665DE1DC9A717004B953C = {
@@ -193,11 +237,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0656190EB8CE84A1A5ECFC7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1711C5467608E0D4C765916B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E38C0ECB899E4F184F4B134 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessagePack/Pods-iMessagePack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82AA9B4B0BE4F147F680B9D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E981C1089F585F36459FEE07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iMessagePackTests/Pods-iMessagePackTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8B2665D11DC9A717004B953C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2665F51DC9AD4C004B953C /* Interpreter.swift in Sources */,
+				8B2665F31DC9AC7B004B953C /* iMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +445,9 @@
 		};
 		8B2665EB1DC9A717004B953C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ECB18D37F897CBA7DF332B7 /* Pods-iMessagePack.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
@@ -330,17 +456,21 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iMessagePack/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.iMessagePack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		8B2665EC1DC9A717004B953C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674970747E82642CC7FED33A /* Pods-iMessagePack.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
@@ -349,6 +479,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = iMessagePack/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.iMessagePack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +490,9 @@
 		};
 		8B2665EE1DC9A717004B953C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8441B6E61E93697ADABAF9E6 /* Pods-iMessagePackTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
 				INFOPLIST_FILE = iMessagePackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,7 +504,9 @@
 		};
 		8B2665EF1DC9A717004B953C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F304FB8755844C638E4CC884 /* Pods-iMessagePackTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 349WFX4WJR;
 				INFOPLIST_FILE = iMessagePackTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +535,7 @@
 				8B2665EC1DC9A717004B953C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B2665ED1DC9A717004B953C /* Build configuration list for PBXNativeTarget "iMessagePackTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +544,7 @@
 				8B2665EF1DC9A717004B953C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
