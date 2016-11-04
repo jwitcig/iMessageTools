@@ -12,14 +12,15 @@ import SwiftTools
 
 infix operator |
 
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
-public protocol iMessageCycle {
-    func handleStarterEvent(message: MSMessage, conversation: MSConversation)
+public protocol MessageSender {
     func send(message: MSMessage, layout: MSMessageTemplateLayout, completionHandler handler: ((Error?)->Void)?)
 }
 
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
-public extension iMessageCycle where Self: MSMessagesAppViewController {
+public extension MessageSender where Self: MSMessagesAppViewController {
     public func send(message: MSMessage, layout: MSMessageTemplateLayout, completionHandler handler: ((Error?)->Void)?) {
         message.layout = layout
         activeConversation?.insert(message, completionHandler: handler)

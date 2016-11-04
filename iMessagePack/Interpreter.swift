@@ -11,8 +11,13 @@ import Messages
 
 import SwiftTools
 
+public protocol StringDictionaryRepresentable {
+    var dictionary: [String: String] { get }
+}
+
 protocol MessageInterpreter { }
 
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
 public struct Reader: MessageInterpreter {
     public let data: [String: String]
@@ -38,6 +43,7 @@ public struct Reader: MessageInterpreter {
     }
 }
 
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
 public struct MessageWriter: MessageInterpreter {
     public let message: MSMessage
@@ -48,8 +54,16 @@ public struct MessageWriter: MessageInterpreter {
         self.message = MSMessage(session: session ?? MSSession())
         self.message.url = components.url
     }
+    
+    public init(item: StringDictionaryRepresentable, session: MSSession?) {
+        guard let components = NSURLComponents(string: "iMessage") else { fatalError() }
+        components.queryItems = item.dictionary.map(NSURLQueryItem.init) as [URLQueryItem]
+        self.message = MSMessage(session: session ?? MSSession())
+        self.message.url = components.url
+    }
 }
 
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
 public protocol MessageSendable {
     static func parse(reader: Reader) -> Self?
