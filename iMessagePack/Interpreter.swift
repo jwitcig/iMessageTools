@@ -49,8 +49,6 @@ public protocol MessageReader: MessageInterpreter {
     
     init()
     mutating func isValid(data: [String : String]) -> Bool
-
-//    func value(forKey key: String) -> String
 }
 
 @available(iOS 10.0, *)
@@ -70,18 +68,11 @@ public extension MessageReader {
         
         self.data = data
     }
-    
-//    public func value(forKey key: String) -> String {
-//        guard let value = (data.filter{$0.key==key}).first?.value else {
-//            fatalError()
-//        }
-//        return value
-//    }
 }
 
 //@available(iOS 10.0, *)
 //@available(iOSApplicationExtension 10.0, *)
-//public struct MessageWriter: MessageInterpreter {
+//public struct GeneralMessageWriter: MessageInterpreter {
 //    public let message: MSMessage
 //    public let data: [String: String]
 //    
@@ -123,28 +114,41 @@ public extension MessageWriter {
 
 @available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
+public struct GeneralMessageReader: MessageReader {
+    public var data: [String: String]
+    
+    public var message: MSMessage
+    
+    public init() {
+        self.message = MSMessage()
+        self.data = [:]
+    }
+    
+    public mutating func isValid(data: [String : String]) -> Bool {
+        return true
+    }
+}
+
+@available(iOS 10.0, *)
+@available(iOSApplicationExtension 10.0, *)
 public protocol MessageValidator {
     var writer: MessageWriter { get }
     
     func messageIsValid() -> Bool
 }
 
-//public extension MessageValidator {
-//    var data: [String: String] {
-//        return writer.data
-//    }
-//}
-
-//@available(iOS 10.0, *)
-//@available(iOSApplicationExtension 10.0, *)
-//public protocol MessageSendable {
-//    static func parse(reader: Reader) -> Self?
-//}
 
 @available(iOS 10.0, *)
 public protocol Messageable {
     associatedtype MessageWriterType: MessageWriter
+    associatedtype MessageLayoutBuilderType: MessageLayoutBuilder
     
     var messageSession: MSSession? { get }
 }
+
+@available(iOS 10.0, *)
+public protocol MessageLayoutBuilder {
+    func generateLayout() -> MSMessageTemplateLayout
+}
+
 

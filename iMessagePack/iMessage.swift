@@ -48,6 +48,7 @@ public extension UIViewController {
         
         controller.view.frame = view.bounds
         controller.view.translatesAutoresizingMaskIntoConstraints = false
+
         view.addSubview(controller.view)
         
         controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
