@@ -14,6 +14,14 @@ infix operator |
 
 @available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
+public protocol OrientationManager {
+    func requestPresentationStyle(_: MSMessagesAppPresentationStyle)
+}
+
+extension MSMessagesAppViewController: OrientationManager { }
+
+@available(iOS 10.0, *)
+@available(iOSApplicationExtension 10.0, *)
 public protocol MessageSender {
     func send(message: MSMessage, layout: MSMessageTemplateLayout, completionHandler handler: ((Error?)->Void)?)
 }

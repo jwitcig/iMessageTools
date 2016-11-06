@@ -11,60 +11,140 @@ import Messages
 
 import SwiftTools
 
-public protocol StringDictionaryRepresentable {
-    var dictionary: [String: String] { get }
-}
+public protocol MessageInterpreter { }
+//
+//@available(iOS 10.0, *)
+//@available(iOSApplicationExtension 10.0, *)
+//public struct Reader: MessageInterpreter {
+//    public let data: [String: String]
+//    
+//    public let message: MSMessage
+//    
+//    public init?(message: MSMessage) {
+//        self.message = message
+//        guard let url = message.url else { return nil }
+//        let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
+//        guard let queryItems = components?.queryItems else { return nil }
+//        
+//        self.data = queryItems.reduce([:]) { dict, queryItem in
+//            return dict.merged([queryItem.name: queryItem.value!])
+//        }
+//    }
+//    
+//    public func value(forKey key: String) -> String {
+//        guard let value = (data.filter{$0.key==key}).first?.value else {
+//            fatalError()
+//        }
+//        return value
+//    }
+//}
 
-protocol MessageInterpreter { }
 
 @available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
-public struct Reader: MessageInterpreter {
-    public let data: [String: String]
+public protocol MessageReader: MessageInterpreter {
+    var data: [String: String] { get set }
     
-    public let message: MSMessage
+    var message: MSMessage { get set }
     
+    init()
+    mutating func isValid(data: [String : String]) -> Bool
+
+//    func value(forKey key: String) -> String
+}
+
+@available(iOS 10.0, *)
+@available(iOSApplicationExtension 10.0, *)
+public extension MessageReader {
     public init?(message: MSMessage) {
+        self.init()
         self.message = message
         guard let url = message.url else { return nil }
         let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true)
         guard let queryItems = components?.queryItems else { return nil }
         
-        self.data = queryItems.reduce([:]) { dict, queryItem in
+        let data = queryItems.reduce([:]) { dict, queryItem in
             return dict.merged([queryItem.name: queryItem.value!])
         }
+        guard isValid(data: data) else { return nil }
+        
+        self.data = data
     }
     
-    public func value(forKey key: String) -> String {
-        guard let value = (data.filter{$0.key==key}).first?.value else {
-            fatalError()
-        }
-        return value
-    }
+//    public func value(forKey key: String) -> String {
+//        guard let value = (data.filter{$0.key==key}).first?.value else {
+//            fatalError()
+//        }
+//        return value
+//    }
+}
+
+//@available(iOS 10.0, *)
+//@available(iOSApplicationExtension 10.0, *)
+//public struct MessageWriter: MessageInterpreter {
+//    public let message: MSMessage
+//    public let data: [String: String]
+//    
+//    public init(data: [String: String], session: MSSession?) {
+//        guard let components = NSURLComponents(string: "iMessage") else { fatalError() }
+//        components.queryItems = data.map(NSURLQueryItem.init) as [URLQueryItem]
+//        self.message = MSMessage(session: session ?? MSSession())
+//        self.message.url = components.url
+//        self.data = data
+//    }
+//}
+
+@available(iOS 10.0, *)
+@available(iOSApplicationExtension 10.0, *)
+public protocol MessageWriter: MessageInterpreter {
+    var message: MSMessage { get set }
+    var data: [String: String] { get set }
+    
+    init()
+    
+    func isValid(data: [String : String]) -> Bool
 }
 
 @available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
-public struct MessageWriter: MessageInterpreter {
-    public let message: MSMessage
-    
-    public init(data: [String: String], session: MSSession?) {
+public extension MessageWriter {
+    public init?(data: [String: String], session: MSSession?) {
+        self.init()
+        
+        guard isValid(data: data) else { return nil }
+
         guard let components = NSURLComponents(string: "iMessage") else { fatalError() }
         components.queryItems = data.map(NSURLQueryItem.init) as [URLQueryItem]
         self.message = MSMessage(session: session ?? MSSession())
         self.message.url = components.url
-    }
-    
-    public init(item: StringDictionaryRepresentable, session: MSSession?) {
-        guard let components = NSURLComponents(string: "iMessage") else { fatalError() }
-        components.queryItems = item.dictionary.map(NSURLQueryItem.init) as [URLQueryItem]
-        self.message = MSMessage(session: session ?? MSSession())
-        self.message.url = components.url
+        self.data = data
     }
 }
 
 @available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
-public protocol MessageSendable {
-    static func parse(reader: Reader) -> Self?
+public protocol MessageValidator {
+    var writer: MessageWriter { get }
+    
+    func messageIsValid() -> Bool
 }
+
+//public extension MessageValidator {
+//    var data: [String: String] {
+//        return writer.data
+//    }
+//}
+
+//@available(iOS 10.0, *)
+//@available(iOSApplicationExtension 10.0, *)
+//public protocol MessageSendable {
+//    static func parse(reader: Reader) -> Self?
+//}
+
+@available(iOS 10.0, *)
+public protocol Messageable {
+    associatedtype MessageWriterType: MessageWriter
+    
+    var messageSession: MSSession? { get }
+}
+
