@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "iMessageTools"
-  s.version          = "1.0"
+  s.version          = "1.0.3"
   s.summary          = "Tools for Swift iMessage development."
   s.homepage         = "https://github.com/jwitcig/iMessageTools"
   s.license          = 'Code is MIT.'
