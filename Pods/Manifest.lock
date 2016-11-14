@@ -1,5 +1,5 @@
 PODS:
-  - SwiftTools (1.1.9)
+  - SwiftTools (1.1.14)
 
 DEPENDENCIES:
   - SwiftTools (from `https://github.com/jwitcig/SwiftTools`)
@@ -10,12 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftTools:
-    :commit: 2c349b675dde1ace1b0ac53109ab6392385e7f07
+    :commit: 11a72c406f6872ecd45cfde622fdec80a9b8f6b1
     :git: https://github.com/jwitcig/SwiftTools
 
 SPEC CHECKSUMS:
-  SwiftTools: d68bd1d6483450503f2f43c3a7d3c2f1c18375eb
+  SwiftTools: 4de240f38e2fe29ae25ce544cca6dc62072fbc19
 
 PODFILE CHECKSUM: e4340ac60629ff4b179aaeffdafebc22f1373472
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
