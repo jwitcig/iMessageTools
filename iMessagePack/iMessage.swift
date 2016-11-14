@@ -13,6 +13,19 @@ import SwiftTools
 infix operator |
 
 @available(iOS 10.0, *)
+public protocol iMessageCycle {
+    func handleStarterEvent(message: MSMessage, conversation: MSConversation)
+}
+
+@available(iOS 10.0, *)
+public extension iMessageCycle where Self: MSMessagesAppViewController {
+    func didSelect(_ message: MSMessage, conversation: MSConversation) {
+        guard message != nil else { return } // potential Xcode bug, message might come thru as nil
+        handleStarterEvent(message: message, conversation: conversation)
+    }
+}
+
+@available(iOS 10.0, *)
 @available(iOSApplicationExtension 10.0, *)
 public protocol OrientationManager {
     func requestPresentationStyle(_: MSMessagesAppPresentationStyle)
