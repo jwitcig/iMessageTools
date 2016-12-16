@@ -9,7 +9,7 @@ target 'iMessagePack' do
 
   # Pods for iMessagePack
 
-  pod 'SwiftTools', :git => "https://github.com/jwitcig/SwiftTools"
+  pod 'JWSwiftTools'
 
   post_install do |installer|
       installer.pods_project.targets.each do |target|

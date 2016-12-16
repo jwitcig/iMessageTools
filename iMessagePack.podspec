@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit'
   s.module_name = 'iMessagePack'
 
-  s.dependency 'SwiftTools'
+  s.dependency 'JWSwiftTools'
 end
