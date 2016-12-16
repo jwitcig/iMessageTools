@@ -9,7 +9,7 @@
 import Foundation
 import Messages
 
-import SwiftTools
+import JWSwiftTools
 
 public protocol MessageInterpreter { }
 //

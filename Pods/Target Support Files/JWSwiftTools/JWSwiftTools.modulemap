@@ -1,0 +1,6 @@
+framework module JWSwiftTools {
+  umbrella header "JWSwiftTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

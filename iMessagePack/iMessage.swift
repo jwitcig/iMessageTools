@@ -8,7 +8,7 @@
 
 import Messages
 
-import SwiftTools
+import JWSwiftTools
 
 infix operator |
 
